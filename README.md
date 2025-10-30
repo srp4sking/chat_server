@@ -189,7 +189,7 @@ RUN mkdir build && cd build && cmake .. && make -j$(nproc)
 CMD ["/src/build/bin/chat_server"]
 ```
 
-- 建议部署在多实例后面接负载均衡器（如 L4 负载均衡或使用 DNS 轮询），并在应用层使用一致性哈希或会话粘滞策略（如果需要）。
+- 建议部署在多实例后面接负载均衡器（如 L4 负载均衡或使用 DNS 轮询），并在应用层使用一致性哈希或会话粘滞策略。
 
 ## 贡献指南
 
@@ -203,8 +203,6 @@ CMD ["/src/build/bin/chat_server"]
 
 ## 许可证
 
-本仓库默认使用 MIT 许可证（如需更改请替换为实际许可证）。
+本仓库默认使用 MIT 许可证。
 
----
-
-如果你同意，我将在仓库根目录创建/更新 README.md 并提交到 main 分支。请确认是否需要我在 README 中附带具体的 CMakeLists.txt 路径、二进制名或配置文件路径（如果有特定位置我应使用），否则我将采用通用路径（bin/chat_server、conf/chat_server.conf）。
+--
